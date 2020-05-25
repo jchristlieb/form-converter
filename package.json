@@ -1,0 +1,16 @@
+{
+  "name": "form-converter",
+  "version": "1.0.0",
+  "description": "A excel to json converter for form inputs.",
+  "main": "index.js",
+  "dependencies": {
+    "convert-excel-to-json": "^1.6.1",
+    "uuid": "^8.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jan Christlieb",
+  "license": "ISC"
+}
