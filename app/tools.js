@@ -43,14 +43,18 @@ module.exports = {
                 let value = row['connected' + did];
                 let connections = [];
 
-                // if value is not empty push treated connection values to array
-                if (value) {
-                    let rawConnections = value.split(",");
-                    rawConnections.forEach(function (connection) {
-                        let int = parseInt(connection, 10) - 2;
-                        connections.push(int);
-                    })
-                }
+                    // if value is not empty push treated connection values to array
+                    if (value) {
+                        if (!isNaN(value)) {
+                            value = '' + value;
+                        }
+
+                        let rawConnections = value.split(",");
+                        rawConnections.forEach(function (connection) {
+                            let int = parseInt(connection, 10) - 2;
+                            connections.push(int);
+                        })
+                    }
 
                 let details = {
                     did: did,
