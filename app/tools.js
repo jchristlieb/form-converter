@@ -20,6 +20,11 @@ module.exports = {
                 return undefined
         }
     },
+
+    defineBoolean: function (value) {
+        return value === "ja" ? false : true;
+    },
+
     multiselectRequired: function (type) {
         return type === 'Multiple-Choice';
     },
