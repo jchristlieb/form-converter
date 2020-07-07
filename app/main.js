@@ -54,7 +54,23 @@ const input = excelToJson({
         AM: 'answer19',
         AN: 'connected19',
         AO: 'answer20',
-        AP: 'connected20'
+        AP: 'connected20',
+        AQ: 'answer21',
+        AR: 'connected21',
+        AS: 'answer22',
+        AT: 'connected22',
+        AU: 'answer23',
+        AV: 'connected23',
+        AW: 'answer24',
+        AX: 'connected24',
+        AY: 'answer25',
+        AZ: 'connected25',
+        BA: 'answer26',
+        BB: 'connected26',
+        BC: 'answer27',
+        BD: 'connected27',
+        BE: 'answer28',
+        BF: 'connected28'
     }
 });
 
