@@ -31,17 +31,17 @@ module.exports = {
 
     addQuestionDetails: function (row, question) {
 
-    const keys = Object.keys(row);
+        const keys = Object.keys(row);
 
-    // if row has property 'answer1' question details must be given
-    if (keys.includes('answer1')) {
+        // if row has property 'answer1' question details must be given
+        if (keys.includes('answer1')) {
 
-        let did = 1;
-        for (const key of keys) {
-            if (key === 'answer' + did) {
+            let did = 1;
+            for (const key of keys) {
+                if (key === 'answer' + did) {
 
-                let value = row['connected' + did];
-                let connections = [];
+                    let value = row['connected' + did];
+                    let connections = [];
 
                     // if value is not empty push treated connection values to array
                     if (value) {
@@ -56,18 +56,18 @@ module.exports = {
                         })
                     }
 
-                let details = {
-                    did: did,
-                    answer: row['answer' + did],
-                    connectedValues: connections,
-                };
+                    let details = {
+                        did: did,
+                        answer: row['answer' + did],
+                        connectedValues: connections,
+                    };
 
-                // push details object into property
-                question.detail.push(details);
-                did++
+                    // push details object into property
+                    question.detail.push(details);
+                    did++
+                }
             }
         }
     }
-}
 
 };
