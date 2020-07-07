@@ -2,7 +2,7 @@
 
 const pathToInputFile = './data/input/rekon-raw.xlsx';
 const pathToOutputFile = './data/output/';
-const nameOfOutputFile = 'rekon-haftpflicht-allgemein';
+const nameOfOutputFile = 'output-file';
 
 const tools = require('./tools');
 const {v4: uuidv4} = require('uuid');
