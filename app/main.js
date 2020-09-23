@@ -1,8 +1,8 @@
 'use strict';
 
 const pathToInputFile = './data/input/rekon-raw.xlsx';
-const pathToOutputFile = './data/output/';
-const nameOfOutputFile = 'output-file';
+const pathToOutputFile = './data/output/rekon/';
+const nameOfOutputFile = 'glasbruch';
 
 const tools = require('./tools');
 const {v4: uuidv4} = require('uuid');
